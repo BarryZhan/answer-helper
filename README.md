@@ -2,13 +2,16 @@
 
 ## 效果图
 - 方法1 使用 WDA 截图，用百度 OCR 识别文字后搜索
-![方法1](http://p2sipr63m.bkt.clouddn.com/D96DECCC93E9F73E3C06BBE08A0088E7.jpg)
+
+![方法1](http://p2sipr63m.bkt.clouddn.com/D96DECCC93E9F73E3C06BBE08A0088E7.jpg){: width="420px"}
+
 - 方法2 调用搜狗答题 api，支持百万英雄、百万赢家、冲顶大会、芝士超人
-![方法2](http://p2sipr63m.bkt.clouddn.com/D96DECCC93E9F73E3C06BBE08A0088E7.jpg)
+
+![方法2](http://p2sipr63m.bkt.clouddn.com/D96DECCC93E9F73E3C06BBE08A0088E7.jpg){: width="420px"}
 
 ## 使用教程
 ### 方法1：使用 WDA 截图，用百度 OCR 识别文字后搜索
-> *注意*：目前只适配了 mac + ios, 配置较麻烦，推荐使用[方法2](#方法2：调用搜狗答题 api，支持百万英雄、百万赢家、冲顶大会、芝士超人)
+> *注意*：目前只适配了 mac + ios, 配置较麻烦，推荐使用 [方法2](#方法2调用搜狗答题-api支持百万英雄百万赢家冲顶大会芝士超人)
 1. 使用真机调试 WDA，参考 iOS 真机如何安装 [WebDriverAgent · TesterHome](https://testerhome.com/topics/7220)
 2. 在[百度平台](https://cloud.baidu.com/product/ocr)上创建应用申请 API Key 和 Secret Key，填写进 `config.js`
 3. 修改`config.js` 中的 `questionArea`和`optionArea`调整截图区域
