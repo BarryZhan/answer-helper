@@ -2,13 +2,8 @@ const axios = require('axios')
 const colors = require('colors')
 const open = require('open')
 
-/*
-xigua => 百万英雄
-huajiao => 百万赢家
-cddh => 冲顶大会
-zscr => 芝士超人
- */
-const keys = ['xigua', 'huajiao', 'cddh', 'zscr']
+const {gameKey} = require('./config')
+
 const timeout = 1000
 let lastTitle = ''
 
@@ -21,7 +16,7 @@ async function star () {
         'User-Agent': 'Mozilla/5.0 (Linux; Android 4.4.2; SM-G900F Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36 SogouSearch Android1.0 version3.0 AppVersion/5909'
       },
       params: {
-        key: keys[2],
+        key: gameKey,
         wdcallback: 'showResult'
       }
     })

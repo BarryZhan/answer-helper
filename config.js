@@ -8,6 +8,11 @@ module.exports = {
   questionArea: [612, 280, 70, 250],
   optionArea: [612, 325, 70, 525],
   keyName: 'space',
-  // ['xigua', 'huajiao', 'cddh', 'zscr']
+  /*
+    xigua => 百万英雄
+    huajiao => 百万赢家
+    cddh => 冲顶大会
+    zscr => 芝士超人
+   */
   gameKey: 'cddh'
 }
