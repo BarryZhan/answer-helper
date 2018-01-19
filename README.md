@@ -29,7 +29,7 @@ zscr => 芝士超人
 
 - 方法2 调用搜狗答题 api，支持百万英雄、百万赢家、冲顶大会、芝士超人
 
-![方法2](http://p2sipr63m.bkt.clouddn.com/D96DECCC93E9F73E3C06BBE08A0088E7.jpg)
+![方法2](http://p2sipr63m.bkt.clouddn.com/C3874EF0724E7614589FE810BD5DF0E0.png)
 
 
 
