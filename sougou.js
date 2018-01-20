@@ -2,12 +2,10 @@ const axios = require('axios')
 const colors = require('colors')
 const open = require('open')
 
-const {gameKey} = require('./config')
-
 const timeout = 1000
 let lastTitle = ''
 
-async function star () {
+async function start () {
   try {
     let {data} = await axios.get('http://140.143.49.31/api/ans2', {
       timeout,
@@ -16,7 +14,7 @@ async function star () {
         'User-Agent': 'Mozilla/5.0 (Linux; Android 4.4.2; SM-G900F Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36 SogouSearch Android1.0 version3.0 AppVersion/5909'
       },
       params: {
-        key: gameKey,
+        key: 'cddh',
         wdcallback: 'showResult'
       }
     })
@@ -24,7 +22,7 @@ async function star () {
   } catch (e) {
     console.log(e.red)
   }
-  setTimeout(star, timeout)
+  setTimeout(start, timeout)
 }
 
 function showResult ({code, result: [, newRes]}) {
@@ -46,4 +44,4 @@ function showResult ({code, result: [, newRes]}) {
   }
 }
 
-star()
+start()
