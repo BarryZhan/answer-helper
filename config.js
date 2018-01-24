@@ -14,5 +14,6 @@ module.exports = {
     cddh => 冲顶大会
     zscr => 芝士超人
    */
-  gameKey: 'cddh'
+  gameKey: 'cddh',
+  openBrowser: true
 }

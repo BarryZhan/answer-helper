@@ -10,4 +10,4 @@ npm-debug.log*
 *.njsproj
 *.sln
 
-history/*.png
+log/*.json
