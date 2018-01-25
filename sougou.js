@@ -34,13 +34,16 @@ function showResult ({code, result}) {
   if (code === 0) {
     result.forEach(item => {
       const res = JSON.parse(item)
-      const {title, answers, search_infos, result, cd_id} = res
+      const {title, answers, search_infos, result, cd_id, error} = res
       if (cache[cd_id]) {
         return
       }
       cache[cd_id] = res
       openBrowser && open('https://www.google.com/search?q=' + title.replace(/^\d{0,2}\.?(\S*?)$/, '$1'))
       console.log('\n' + title.blue)
+      if (error) {
+        console.log('====== 此题答案可能错误，请谨慎选择! ======'.red)
+      }
       answers.forEach((answer, index) => {
         console.log(`选项${++index}：${answer}${result === answer ? '   <= 正确答案'.green : ''}`.yellow)
       })
